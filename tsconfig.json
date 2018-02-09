@@ -1,0 +1,22 @@
+﻿{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "module": "es2015",
+    "lib": [ "dom", "es2015", "es2016" ],
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    //"noUnusedLocals": true,
+    //"noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "node_modules/@types/**/*.d.ts",
+    "src/**/*.ts"
+  ]
+}

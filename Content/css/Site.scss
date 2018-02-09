@@ -1,0 +1,216 @@
+body {
+    /*not required because it was the default MS solution to the problem which was better solved by https://stackoverflow.com/a/30926592 */
+    /*padding-top: 50px;*/
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+.btn-xl {
+    padding: 18px 28px;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+.nodisplay {
+    display: none;
+}
+
+tr:hover {
+    cursor: pointer;
+}
+
+
+
+#loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    z-index: 99999; /*high z-index to make it in front of modals*/
+}
+
+.bottommargin20 {
+    margin-bottom: 20px;
+}
+
+.topmargin10 {
+    margin-top: 10px;
+}
+
+.topmargin20 {
+    margin-top: 20px;
+}
+
+.bottommargin10 {
+    margin-bottom: 10px;
+}
+
+.fullwidth {
+    width: 100% !important;
+}
+
+.handcursor {
+    cursor: pointer;
+}
+
+#requestedTotalQty {
+    width: 100% !important;
+}
+
+.table-fit {
+    margin-left: 20px;
+    white-space: nowrap;
+    width: 1%;
+}
+
+.td-fit {
+    padding-left: 20px !important;
+}
+
+//Checkbox styling from https://bootsnipp.com/snippets/featured/animated-radios-amp-checkboxes-nojs
+.checkbox label:after,
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+.pad_mar0{
+  margin: 0;
+  padding: 0;
+}
+.form-control1{
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: -14px !important;
+}
+.input-group1{
+    width: 80% !important;
+    position: relative !important;
+    float: left;
+}
+.input-group2{
+    width: 88.2% !important;
+    position: relative !important;
+    float: left;
+}
+.btn-customize{
+    position: relative !important; 
+}
+.remove-custom-flavour{
+    float: left !important;
+}
+
+@media only screen and (max-width: 1362px) {
+    .input-group1{
+    width: 75% !important;
+ 
+    }
+    .input-group2{
+    width: 80% !important;
+ 
+    }
+}
+@media only screen and (max-width: 991px) {
+  .bottom-margin{
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+    .qty-edt-mbl{
+        font-size: 9px;
+        padding: 0px 7px;
+    }
+}
+@media only screen and (max-width: 800px) {
+  .bottom-margin{
+    margin-bottom: 15px;
+  }
+  .topForm{
+    margin-top: 30px !important;
+  }
+  .qty-editor {
+    width: 100% !important;
+  }
+  .input-group2{
+    width: 85.5% !important;
+ 
+    }
+    .qty-edt-mbl{
+        font-size: 9px;
+        padding: 0px 7px;
+    }
+}
